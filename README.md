@@ -1,39 +1,81 @@
-**Welcome to your Base44 project** 
+# 🚀 SkillSync - Collaborative Learning Platform
 
-**About**
+SkillSync is a modern web application that facilitates **collaborative learning** through interactive study sessions, skill exchange, and **AI-powered assistance**.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+---
 
-This project contains everything you need to run your app locally.
+# 🎯 Features
 
-**Edit the code in your local development environment**
+## 🎓 Learning Rooms
+- Create and join virtual study sessions
+- Real-time chat with participants
+- Share learning materials (PDFs, links, notes)
+- Topic-based categorization (Programming, Data Science, Design, etc.)
+- Team invite codes for private sessions
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+---
 
-**Prerequisites:** 
+## 🔄 Skill Swap Marketplace
+- Exchange skills with fellow learners
+- Smart matching algorithm
+- Send and manage skill swap requests
+- Profile-based discovery
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+---
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+## 🤖 AI Assistant
+- Interactive AI tutor for personalized help
+- Context-aware explanations
+- Learning resource recommendations
+- Markdown-formatted responses
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
+---
 
-Run the app: `npm run dev`
+## 🏆 Gamification
+- Points-based reputation system
+- Quiz challenges after sessions
+- Leaderboard rankings
+- Achievement levels *(Beginner → Master)*
+- Badges and rewards
 
-**Publish your changes**
+---
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+## 📊 Personal Dashboard
+- Track your learning progress
+- View upcoming sessions
+- Monitor activity feed
+- Performance analytics
 
-**Docs & Support**
+---
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+# 🛠 Tech Stack
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+| Layer | Technology |
+|------|------------|
+| Frontend | React 18 + Vite |
+| Styling | Tailwind CSS |
+| UI Components | Radix UI + shadcn/ui |
+| Animations | Framer Motion |
+| State Management | TanStack Query |
+| Routing | React Router DOM |
+| Backend | Base44 Platform (BaaS) |
+| Icons | Lucide React |
+
+---
+
+# ⚙️ Getting Started
+
+## Prerequisites
+
+- Node.js **v16 or higher**
+- npm or yarn
+
+---
+
+## Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone <repository-url>
+cd skillsync

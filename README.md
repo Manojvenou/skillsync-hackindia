@@ -2,6 +2,8 @@
 
 SkillSync is a modern web application that facilitates **collaborative learning** through interactive study sessions, skill exchange, and **AI-powered assistance**.
 
+Live Demo : https://learn-link-sync.base44.app
+
 ---
 
 # 🎯 Features

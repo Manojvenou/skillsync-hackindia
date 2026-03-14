@@ -1,0 +1,54 @@
+{
+  "name": "SkillSwap",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "User's display name"
+    },
+    "skills_to_teach": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills the user can teach"
+    },
+    "skills_to_learn": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills the user wants to learn"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short bio about the user"
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "weekdays",
+        "weekends",
+        "flexible"
+      ],
+      "default": "flexible"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "paused"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "user_email",
+    "skills_to_teach",
+    "skills_to_learn"
+  ]
+}

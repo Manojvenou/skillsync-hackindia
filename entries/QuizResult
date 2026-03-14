@@ -1,0 +1,41 @@
+{
+  "name": "QuizResult",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "room_id": {
+      "type": "string",
+      "description": "Learning room this quiz was for"
+    },
+    "room_title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number",
+      "description": "Score out of 100"
+    },
+    "total_questions": {
+      "type": "number"
+    },
+    "correct_answers": {
+      "type": "number"
+    },
+    "points_earned": {
+      "type": "number",
+      "description": "Reputation points earned"
+    }
+  },
+  "required": [
+    "user_email",
+    "room_id",
+    "score"
+  ]
+}

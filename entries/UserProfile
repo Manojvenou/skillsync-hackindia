@@ -1,0 +1,70 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "total_points": {
+      "type": "number",
+      "default": 0
+    },
+    "rooms_joined": {
+      "type": "number",
+      "default": 0
+    },
+    "rooms_hosted": {
+      "type": "number",
+      "default": 0
+    },
+    "quizzes_taken": {
+      "type": "number",
+      "default": 0
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "earned_date": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "learner",
+        "contributor",
+        "expert",
+        "master"
+      ],
+      "default": "beginner"
+    }
+  },
+  "required": [
+    "user_email",
+    "display_name"
+  ]
+}

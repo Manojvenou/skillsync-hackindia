@@ -1,0 +1,24 @@
+{
+  "name": "RoomMessage",
+  "type": "object",
+  "properties": {
+    "room_id": {
+      "type": "string",
+      "description": "Learning room ID"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "room_id",
+    "sender_email",
+    "message"
+  ]
+}

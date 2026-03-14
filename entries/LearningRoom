@@ -1,0 +1,105 @@
+{
+  "name": "LearningRoom",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Room title/topic"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this room is about"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "programming",
+        "data_science",
+        "design",
+        "math",
+        "language",
+        "science",
+        "business",
+        "other"
+      ],
+      "description": "Learning category"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the session starts"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "Session duration in minutes"
+    },
+    "max_participants": {
+      "type": "number",
+      "default": 10,
+      "description": "Maximum number of participants"
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "pdf",
+              "link",
+              "note"
+            ]
+          }
+        }
+      },
+      "description": "Study materials"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of participant emails"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "live",
+        "completed"
+      ],
+      "default": "upcoming"
+    },
+    "host_name": {
+      "type": "string",
+      "description": "Name of room creator"
+    },
+    "host_email": {
+      "type": "string",
+      "description": "Email of room creator"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for the room"
+    },
+    "team_code": {
+      "type": "string",
+      "description": "Unique invite code for the room"
+    }
+  },
+  "required": [
+    "title",
+    "topic",
+    "session_date"
+  ]
+}
